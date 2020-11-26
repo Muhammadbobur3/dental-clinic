@@ -1,0 +1,172 @@
+.dentists {
+  padding-bottom: 70px;
+  background-image: url("../img/dentists-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 750px 613px;
+  background-position: calc(50% - 520px) top;
+}
+
+.dentists__bg {
+  display: none;
+}
+
+.dentists__inner {
+  max-width: 625px;
+  margin-left: auto;
+}
+.dentists__title {
+  max-width: 500px;
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #272727;
+}
+
+.dentists__title::before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  display: block;
+  background-color: #FFD600;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.dentists__text {
+  max-width: 700px;
+  margin: 0;
+  margin-bottom: 27px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.dentists__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.dentists__item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+  &--expert::before{
+    content: "";
+    width: 67px;
+    height: 67px;
+    background-image: url("../img/expert.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    margin-right: 33px;
+  }
+
+  &--technology::before{
+    content: "";
+    width: 67px;
+    height: 67px;
+    background-image: url("../img/dental.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    margin-right: 33px;
+  }
+
+  &--location::before{
+    content: "";
+    width: 67px;
+    height: 67px;
+    background-image: url("../img/location.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    margin-right: 33px;
+  }
+}
+.dentists__mini-title {
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.dentists__mini-text {
+  max-width: 500px;
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4D4D4D;
+}
+
+@media only screen and (max-width: 1300px) {
+  .dentists {
+    background-image: url("../img/dentists-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 750px 613px;
+    background-position: left -250px top;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .dentists {
+    background-image: url("../img/dentists-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 750px 613px;
+    background-position: left -350px top;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .dentists {
+    background-image: url("../img/dentists-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 750px 613px;
+    background-position: left -450px top;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .dentists {
+    background-image: none;
+  }
+
+  .dentists__bg {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dentists__inner {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .dentists {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .dentists__mini-text {
+    display: none;
+  }
+}

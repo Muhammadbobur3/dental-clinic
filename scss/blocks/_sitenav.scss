@@ -1,0 +1,162 @@
+.sitenav {
+  position: absolute;
+  min-width: 1140px;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 95px;
+  padding: 20px 33px;
+  background-color: #0055B8;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.sitenav--nojs .sitenav__toggler {
+  display: none;
+}
+
+.sitenav--nojs .sitenav__list {
+  display: block;
+}
+
+.sitenav__container {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sitenav-open {
+  background-color: blue;
+  widows: 20px;
+  height: 20px;
+  margin-left: auto;
+  display: none;
+}
+
+.sitenav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.sitenav__logo {
+  text-decoration: none;
+  display: none;
+}
+
+.sitenav__item:not(:first-child) {
+  margin-left: 35px;
+}
+
+.sitenav__link {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  transition: all 0.2s ease;
+}
+
+.sitenav__toggler {
+  display: none;
+}
+
+.sitenav__link:hover {
+  color: #FFD600;
+}
+
+.sitenav__link:active {
+  opacity: 0.6;
+}
+
+.sitenav__social {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.sitenav__social-item:not(:last-child) {
+  margin-right: 13px;
+}
+
+.sitenav__social-link {
+  display: block;
+  text-decoration: none;
+}
+
+.sitenav__social-link:hover {
+  opacity: 0.8;
+}
+
+.sitenav__social-link:active {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 1150px) {
+  .sitenav {
+    min-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .sitenav {
+    top: 0;
+  }
+
+  .sitenav__logo {
+    display: block;
+  }
+
+  &--nojs {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .sitenav {
+    border-radius: 0;
+  }
+
+  .sitenav--open .sitenav__list {
+    display: block;
+  }
+
+  .sitenav__list {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 100%;
+    background-color: #0055B8;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .sitenav__item {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    border: 1px solid #FFD600;
+  }
+
+  .sitenav__item:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .sitenav__toggler {
+    display: block;
+    background: transparent;
+    border: none;
+  }
+
+  .sitenav__social {
+    display: none;
+  }
+}

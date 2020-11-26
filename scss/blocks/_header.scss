@@ -1,0 +1,131 @@
+.header {
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding-top: 12px;
+  padding-bottom: 56px;
+  background-color: #fff;
+
+  &--nojs {
+    position: relative;
+  }
+}
+
+.nav--nojs .nav__list {
+  position: relative;
+  display: block;
+}
+
+.header__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  justify-content: space-between;
+  display: flex;
+}
+
+.header__item {
+  display: flex;
+  align-items: center;
+
+  &--logo {
+    display: none;
+  }
+
+  &--tel::before {
+    content: "";
+    min-width: 29px;
+    min-height: 29px;
+    background-image: url("../img/phone.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    margin-right: 7px;
+  }
+
+  &--clock::before {
+    content: "";
+    min-width: 29px;
+    min-height: 29px;
+    background-image: url("../img/clock.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    margin-right: 7px;
+  }
+}
+
+.header__tel {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #272727;
+}
+
+.header__tel:hover {
+  opacity: 0.8;
+}
+
+.header__tel:active {
+  opacity: 0.6;
+}
+
+.header__contact {
+  margin: 0;
+  margin-bottom: 3px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #272727;
+}
+
+.header__logo {
+  display: block;
+}
+
+.header__logo:hover {
+  opacity: 0.8;
+}
+
+.header__logo:active {
+  opacity: 0.6;
+}
+
+.header__text {
+  margin: 0;
+  margin-bottom: 3px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #00B007;
+}
+
+.header__schedule {
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #272727;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    background-color: transparent;
+  }
+
+  .header__list {
+    display: none;
+  }
+}

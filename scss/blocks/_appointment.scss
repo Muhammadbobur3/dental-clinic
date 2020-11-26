@@ -1,0 +1,220 @@
+.appointment {
+  padding-bottom: 70px;
+}
+
+.appointment__container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.appointment__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.appointment__item {
+  max-width: 300px;
+  padding: 56px 36px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+
+  &--treatment {
+    background-color: #FFD600;
+  }
+
+  &--prosthetics {
+    background-color: #FFE040;
+  }
+
+  &--treatment::before {
+    content: "";
+    min-width: 87px;
+    min-height: 87px;
+    background-image: url("../img/treatment.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+  }
+
+  &--prosthetics::before {
+    content: "";
+    min-width: 87px;
+    min-height: 87px;
+    background-image: url("../img/prostethics.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+  }
+}
+.appointment__title {
+  margin-top: 19px;
+  margin-bottom: 4px;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #272727;
+}
+.appointment__text {
+  margin: 0;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  color: #272727;
+}
+.appointment__form {
+  position: absolute;
+  left: 625px;
+  padding: 34px 18px;
+  background-color: #0055B8;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.appointment__form-title {
+  margin-top: 0;
+  margin-bottom: 29px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.appointment__input {
+  min-width: 473px;
+  padding: 20px 14px;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.appointment__button {
+  max-width: 230px;
+  padding: 17px 63px;
+  background-color: #FFD600;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 22px;
+}
+
+.appointment__button:hover {
+  opacity: 0.8;
+}
+
+.appointment__button:active {
+  opacity: 0.6;
+}
+
+.appointment__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.appointment__form-text {
+  width: 260px;
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.appointment__checkbox {
+  // display: none;
+  appearance: none;
+}
+
+.appointment__span {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/checkbox.svg");
+  background-repeat: no-repeat;
+  right: 20px;
+}
+
+.appointment__checkbox + .appointment__span {
+  background-image: url("../img/checkbox-off.svg");
+}
+
+.appointment__checkbox:checked + .appointment__span {
+  background-image: url("../img/checkbox.svg");
+}
+
+.appointment__checkbox:focus + .appointment__span {
+  background-image: url("../img/checkbox-off.svg");
+}
+
+.appointment__checkbox:checked:focus + .appointment__span {
+  background-image: url("../img/checkbox.svg");
+}
+
+@media only screen and (max-width: 1160px) {
+  .appointment__item {
+    max-width: 269px;
+    text-align: left;
+  }
+
+  .appointment__form {
+    min-width: 485px;
+    left: 538px;
+  }
+
+  .appointment__input {
+    max-width: 424px;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .appointment__list {
+    display: none;
+  }
+
+  .appointment__form {
+    width: 100%;
+    position: static;
+  }
+
+  .appointment__span {
+    right: 60px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .appointment__form {
+    min-width: 100%;
+  }
+
+  .appointment__input {
+    min-width: 327px;
+  }
+
+  .appointment__button {
+    min-width: 327px;
+  }
+
+
+  .appointment__span {
+    right: 25px;
+  }
+}

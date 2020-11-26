@@ -1,0 +1,178 @@
+.team {
+  padding-bottom: 70px;
+}
+
+.team__container {
+  position: relative;
+}
+
+.team__title {
+  margin: 0;
+  margin-bottom: 13px;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #272727;
+}
+
+.team__title::before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  display: block;
+  margin-bottom: 13px;
+  background-color: #FFD600;
+  margin-top: 13px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team__text {
+  max-width: 930px;
+  margin: 0;
+  margin-bottom: 21px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #4D4D4D;
+}
+
+.team__button {
+  position: absolute;
+  background: transparent;
+  border: none;
+
+  &--left {
+    left: 0;
+    top: 300px;
+  }
+
+  &--right {
+    right: 0;
+    top: 300px;
+  }
+}
+
+.team__button:hover {
+  opacity: 0.6;
+}
+
+.team__button:active {
+  opacity: 0.8;
+}
+
+.team__list {
+  max-width: 1000px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.team__img {
+  display: block;
+}
+
+.team__name {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.team__profession {
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+@media only screen and (max-width: 1090px) {
+  .team__list {
+    max-width: 925px;
+  }
+}
+
+@media only screen and (max-width: 1015px) {
+  .team {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .team__list {
+    max-width: 790px;
+  }
+
+  .team__img {
+    max-width: 252px;
+  }
+}
+
+@media only screen and (max-width: 885px) {
+  .team__img--larisa {
+    display: none;
+  }
+
+  .team__larisa {
+    display: none;
+  }
+
+  .team__list {
+    max-width: 550px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team__item {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .team__list {
+    max-width: 300px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team__img--ivan {
+    display: none;
+  }
+
+  .team__ivan {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:430px) {
+  .team__button {
+    display: none;
+  }
+}

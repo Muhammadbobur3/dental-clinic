@@ -1,0 +1,224 @@
+.services {
+  padding-bottom: 70px;
+}
+
+.services__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #272727;
+  text-align: center;
+}
+
+.services__container {
+  position: relative;
+}
+
+.services__button {
+  position: absolute;
+  background: transparent;
+  border: none;
+
+  &--left {
+    bottom: 100px;
+  }
+
+  &--right {
+    right: 0;
+    bottom: 100px;
+  }
+}
+
+.services__button:hover {
+  opacity: 0.6;
+}
+
+.services__button:active {
+  opacity: 0.8;
+}
+
+.services__title::before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #FFE040;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.services__text {
+  position: relative;
+  max-width: 600px;
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #4D4D4D;
+}
+
+.services__text::before {
+  content: ":D :P";
+  position: absolute;
+  bottom: -15px;
+  left: 160px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 130px;
+  line-height: 152px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.05);
+}
+
+.services__list {
+  margin: 0;
+  margin-top: 70px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+.services__item {
+  max-width: 200px;
+  padding: 28px 65px;
+  background-color: #fff;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+
+  &--hygiene::before {
+    content: "";
+    width: 77px;
+    height: 66px;
+    background-image: url("../img/hygine.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+  }
+  &--diagnostic::before {
+    content: "";
+    width: 66px;
+    height: 66px;
+    background-image: url("../img/diagnostic.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+  }
+  &--dentist::before {
+    content: "";
+    width: 73px;
+    height: 62px;
+    background-image: url("../img/dentist.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+  }
+  &--dental::before {
+    content: "";
+    width: 69px;
+    height: 68px;
+    background-image: url("../img/dental.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+  }
+}
+
+.services__item:first-child {
+  margin-left: 77px;
+}
+
+.services__item:not(:first-child) {
+  margin-left: 45px;
+}
+
+.services__mini-title {
+  margin-top: 13px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #272727;
+}
+
+.services__mini-title::after {
+  content: "";
+  width: 25px;
+  height: 2px;
+  display: block;
+  margin-bottom: 13px;
+  background-color: #0A60C3;
+  margin-top: 13px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services__span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration-line: line-through;
+  color: rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.services__mini-text {
+  margin: 0;
+  margin-top: 3px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #0A60C3;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .services__item--dental {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 865px) {
+  .services__item--dentist {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  .services__item--diagnostic {
+    display: none;
+  }
+
+  .services__text::before {
+    font-size: 100px;
+    line-height: 122px;
+    left: 170px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .services__text::before {
+    left: 80px;
+    bottom: 30px;
+  }
+}

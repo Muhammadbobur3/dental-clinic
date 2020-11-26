@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dental Clinic</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <ul class="header__list">
+        <li class="header__item header__item--tel">
+          <a class="header__tel" href="tel:998994843110">
+            <p class="header__contact">Contact us</p>+7(342)216-22-27
+          </a>
+        </li>
+
+        <li class="header__item">
+          <a class="header__logo" href="index.html">
+            <img src="img/logo.svg" alt="logo" width="103" height="56">
+          </a>
+        </li>
+
+        <li class="header__item header__item--clock">
+          <div>
+            <p class="header__text">Open now</p>
+            <p class="header__schedule">We work until <time datetime="19:00:00">19:00</time>
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <nav class="sitenav header__sitenav">
+
+        <!-- nojs with script) -->
+
+        <div class="sitenav__container">
+          <a class="sitenav__logo" href="index.html">
+            <img src="img/logo-sm.svg" alt="logo" width="140" height="21">
+          </a>
+
+          <button class="sitenav__toggler" type="button">
+            <img src="img/gamburger.png" alt="menu toggler" width="25" height="18">
+          </button>
+
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="services.html">Services</a>
+            </li>
+
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="advantages.html">Advantages</a>
+            </li>
+
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="team.html">Team</a>
+            </li>
+
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="reviews.html">Reviews</a>
+            </li>
+
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="contacts.html">Contacts</a>
+            </li>
+          </ul>
+          <ul class="sitenav__social">
+            <li class="sitenav__social-item">
+              <a class="sitenav__social-link" href="https://www.vkontakte.com" target="_blank">
+                <img src="img/vkontakte.png" alt="vkontakte" width="28" height="28">
+              </a>
+            </li>
+
+            <li class="sitenav__social-item">
+              <a class="sitenav__social-link" href="https://www.instagram.com" target="_blank">
+                <img src="img/instagram.svg" alt="instagram" width="16" height="16">
+              </a>
+            </li>
+
+            <li class="sitenav__social-item">
+              <a class="sitenav__social-link" href="https://www.twitter.com" target="_blank">
+                <img src="img/twitter.svg" alt="twitter" width="18" height="18">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+      <div class="container hero__container">
+        <button class="hero__button hero__button--left" type="button">
+          <img src="img/arrow-left.png" alt="arrow left" width="14" height="24">
+        </button>
+        <button class="hero__button hero__button--right" type="button">
+          <img class="hero-bg" src="img/arrow-right.png" alt="arrow-right" width="25" height="24">
+        </button>
+      </div>
+
+      <ul class="hero__list">
+        <li class="hero__item">
+          <img class="hero__img" src="img/hero-bg.png" alt="hero-bg" width="1920" height="900" srcset="img/hero-bg.png 1x, img/hero-bg@2x.png 2x">
+
+          <img class="hero__md-bg" src="img/hero-md-bg.png" alt="hero-bg" width="1024" height="872" srcset="img/hero-md-bg.png 1x, img/hero-md-bg@2x.png 2x">
+          <img class="hero__sm-bg" src="img/hero-sm-bg.png" alt="hero-bg" width="375" height="599" srcset="img/hero-sm-bg.png 1x, img/hero-sm-bg@2x.png 2x">
+
+          <div class="container hero__inner-container">
+            <div class="hero__inner">
+              <p class="hero__text">Modern technology and expert-class dentists</p>
+              <h2 class="hero__title">get a brilliant smile for every day</h2>
+              <button class="hero__get" type="button">Get</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- APPOINTMENT FORM -->
+
+    <section class="appointment">
+
+      <h1 class="visually-hidden">Appointment</h1>
+      <div class="container appointment__container container--small">
+        <ul class="appointment__list">
+          <li class="appointment__item appointment__item--treatment">
+
+            <h3 class="appointment__title">
+              Treatment
+            </h3>
+            <p class="appointment__text">
+              All types of dental treatment are carried out using the most modern technologies.
+            </p>
+
+          </li>
+
+          <li class="appointment__item appointment__item--prosthetics">
+
+            <h3 class="appointment__title">
+              Prosthetics
+            </h3>
+            <p class="appointment__text">
+              We will help you find the most convenient and aesthetically attractive version of the prosthesis.
+            </p>
+
+          </li>
+        </ul>
+
+        <form class="appointment__form" action="https://echo.htmlacademy.ru" method="POST">
+          <h3 class="appointment__form-title">Appointment</h3>
+          <input class="appointment__input" type="text" name="name" placeholder="Name">
+          <input class="appointment__input" type="tel" name="phone" placeholder="Phone">
+          <button class="appointment__button" type="submit">Appointment</button>
+          <div class="appointment__inner">
+            <p class="appointment__form-text">I give my consent to the storage and processing of personal data</p>
+            <label class="appointmeint__label" for="">
+              <input  class="appointment__checkbox visually-hidden" name="checkbox" type="checkbox">
+              <span aria-hidden="true" class="appointment__span"></span>
+            </label>
+
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+
+    <section class="services">
+      <div class="container services__container">
+        <h2 class="services__title">Services</h2>
+        <p class="services__text">We provide a wide range of services from treatment to prosthetics. Therefore, you do not need to go anywhere else.</p>
+
+        <button class="services__button services__button--left" type="button">
+          <img src="img/button-left.png" alt="arrow-left">
+        </button>
+        <button class="services__button services__button--right" type="button">
+          <img src="img/button-right.png" alt="arrow-right">
+        </button>
+
+        <ul class="services__list">
+          <li class="services__item services__item--hygiene">
+            <h4 class="services__mini-title">Hygiene</h4>
+            <span class="services__span"><del>6000P</del></span>
+            <p class="services__mini-text">3100P</p>
+          </li>
+
+          <li class="services__item services__item--diagnostic">
+            <h4 class="services__mini-title">Diagnostics</h4>
+            <span class="services__span"><del>1000P</del></span>
+            <p class="services__mini-text">4600</p>
+          </li>
+
+          <li class="services__item services__item--dentist">
+            <h4 class="services__mini-title">Children’s
+              dentistry</h4>
+              <span class="services__span"><del>5000P</del></span>
+              <p class="services__mini-text">FREE</p>
+            </li>
+
+            <li class="services__item services__item--dental">
+              <h4 class="services__mini-title">Dental treatment</h4>
+              <span class="services__span"><del>5000P</del></span>
+              <p class="services__mini-text">3100P</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- DENTISTS -->
+
+      <section class="dentists">
+        <img class="dentists__bg" src="img/dentists-bg.jpg" aria-hidden="true" alt="" width="750" height="613">
+        <div class="container">
+          <div class="dentists__inner">
+            <h2 class="dentists__title">Modern technology and expert-class dentists</h2>
+            <p class="dentists__text">Even the best doctor is not able to “squeeze” out of technology more than the potential that manufacturers have laid in it. This primarily relates to medical equipment and instruments. Therefore, the better equipped the dental clinic is, the better, safer and faster the work is done.
+              We do not consider it possible to save on technology and tools. Everything that is worthy of the attention of professional dentists is already with us.</p>
+              <div class="dentists__inner">
+                <ul class="dentists__list">
+                  <li class="dentists__item dentists__item--expert">
+                    <div>
+                      <h3 class="dentists__mini-title">Expert-class dentists</h3>
+                      <p class="dentists__mini-text">Our clinic is located in the center of the Sverdlovsk region, at: Street Raboche-Krestyanskaya 6.          From the hypermarket “Semya” to our clinic - 5 minutes on foot.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="dentists__item dentists__item--technology">
+                    <div>
+                      <h3 class="dentists__mini-title">Modern technology</h3>
+                      <p class="dentists__mini-text">All 13 dentists of our center are highly qualified specialists with extensive experience; each of them is sincerely interested in further improving their professionalism.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="dentists__item dentists__item--location">
+                    <div>
+                      <h3 class="dentists__mini-title">Convenient location and working hours</h3>
+                      <p class="dentists__mini-text">We believe that the better equipped a dental clinic is, the better, safer and faster the work is done.
+                        We do not consider it possible to save on technology and tools. Everything that is worthy of the attention of professional dentists is already with us.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- TEAM -->
+
+        <section class="team">
+          <div class="container team__container">
+            <h2 class="team__title">Professional team</h2>
+            <p class="team__text">Dental Practice employs orthodontists and orthopedists, surgeons and therapists, as well as children's dentists. All 13 dentists of our center are highly qualified specialists with extensive experience.</p>
+
+            <button class="team__button team__button--left" type="button">
+              <img src="img/button-left.png" alt="arrow-left" width="42" height="49">
+            </button>
+
+            <button class="team__button team__button--right" type="button">
+              <img src="img/button-right.png" alt="arrow-right" width="42" height="49">
+            </button>
+
+            <ul class="team__list">
+              <li class="team__item">
+                <img class="team__img team__img--anna" src="img/anna.jpg" alt="anna" width="300" height="350" srcset="img/anna.jpg 1x, img/anna@2x.jpg 2x">
+                <div class="team__anna">
+                  <p class="team__name">Anna Petrova</p>
+                  <p class="team__profession">Expert-class dentist</p>
+                </div>
+              </li>
+
+              <li class="team__item">
+                <img class="team__img team__img--ivan" src="img/ivan.jpg" alt="ivan" width="300" height="350" srcset="img/ivan.jpg 1x, img/ivan@2x.jpg 2x">
+                <div class="team__ivan">
+                  <p class="team__name">Ivan Ivanov</p>
+                  <p class="team__profession">Expert-class dentist</p>
+                </div>
+              </li>
+
+              <li class="team__item">
+                <img class="team__img team__img--larisa" src="img/larisa.jpg" alt="larisa" width="300" height="350" srcset="img/larisa.jpg 1x, img/larisa@2x.jpg 2x">
+                <div class="team__larisa">
+                  <p class="team__name">Larisa Vasileva</p>
+                  <p class="team__profession">Expert-class dentist</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- QUALITY -->
+
+        <section class="quality">
+          <div class="container">
+            <img class="quality__bg" src="img/quality-sm-bg.jpg" aria-hidden="true" alt="" width="464" height="309" srcset="img/quality-sm-bg.jpg 1x, img/quality-sm-bg@2x.jpg 2x">
+            <div class="quality__box">
+              <h2 class="quality__title">We are confident in the quality of our services</h2>
+            <p class="quality__text">About 50 thousand patients opted for the Dental   Practice dental center. People come to us as a family, because trust and      comfort are important for the health of loved ones. And we provide this:
+              - You do not need to go anywhere else - the center provides the whole range of dental services - treatment and diagnosis, as well as prevention.
+              - We have reasonable prices. You pay for quality. And you will be offered different opportunities.- We also do not pursue cheapness. This is our reasonable choice - only good materials should be used in the treatment, and professionals should deal with it.- For regular customers discounts from 5 to 20%.</p>
+
+              <div class="quality__inner">
+                <img class="quality__signature" src="img/signature.png" alt="warranty signature" width="85" height="70">
+
+                <button class="quality__button" type="button">Learn more</button>
+              </div>
+            </div>
+            </div>
+          </section>
+
+          <!-- REVIEWS -->
+
+          <section class="reviews">
+            <div class="container">
+              <h2 class="reviews__title">Reviews from our patients</h2>
+              <p class="reviews__text">Here are the latest reviews from our regular customers. You can also leave your review by clicking on the link below</p>
+
+              <ul class="reviews__list">
+                <li class="reviews__item">
+                  <img class="reviews__img" src="img/vasilisa.jpg" alt="ivan" width="354" height="240"
+                  srcset="img/vasilisa.jpg 1x, img/vasilisa@2x.jpg 2x">
+                  <p class="reviews__name">Ivan Ivanov</p>
+                  <p class="reviews__profession">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis illo veniam tempora omnis tempore repellendus debitis iusto alias nihil, obcaecati doloremque hic qui assumenda, maiores quae sapiente vitae. Ratione.</p>
+                </li>
+
+                <li class="reviews__item reviews__item--vasilisa">
+                  <img class="reviews__img" src="img/petr.jpg" alt="petr" width="354" height="240"
+                  srcset="img/petr.jpg 1x, img/petr@2x.jpg 2x">
+                  <p class="reviews__name">Vasilisova Vasilisa</p>
+                  <p class="reviews__profession">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis illo veniam tempora omnis tempore repellendus debitis iusto alias nihil, obcaecati doloremque hic qui assumenda, maiores quae sapiente vitae. Ratione.</p>
+                </li>
+
+                <li class="reviews__item reviews__item--petr">
+                  <img class="reviews__img" src="img/petr.jpg" alt="ivan" width="354" height="240"
+                  srcset="img/petr.jpg 1x, img/petr@2x.jpg 2x">
+                  <p class="reviews__name">Petrov Petr</p>
+                  <p class="reviews__profession">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis illo veniam tempora omnis tempore repellendus debitis iusto alias nihil, obcaecati doloremque hic qui assumenda, maiores quae sapiente vitae. Ratione.</p>
+                </li>
+              </ul>
+
+              <a class="reviews__link" href="team.html">Give feedback</a>
+            </div>
+          </section>
+
+          <!-- LOCATION -->
+
+          <section class="location">
+            <div class="container">
+              <h2 class="location__title">Convenient location and working hours</h2>
+              <p class="location__text">Our clinic is located in the center of the Sverdlovsk district, at the address: Raboche-Krestyanskaya Street 6. From the bus stop “Family” hypermarket to our dental clinic - 5 minutes on foot.</p>
+            </div>
+          </section>
+        </main>
+
+        <script>
+          var elHeader = document.querySelector(".header")
+
+          elHeader.classList.remove("header--nojs");
+        </script>
+      </body>
+      </html>
