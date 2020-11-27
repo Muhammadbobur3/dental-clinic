@@ -1,56 +1,77 @@
-.appointment {
+.location {
   padding-bottom: 70px;
 }
 
-.appointment__container {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
+.location__map-sm {
+  display: none;
 }
 
-.appointment__list {
+.location__title {
   margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
+  margin-bottom: 13px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #272727;
+  text-align: center;
 }
 
-.appointment__item {
-  max-width: 300px;
-  padding: 56px 36px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-
-  &--treatment {
-    background-color: #FFD600;
-  }
-
-  &--prosthetics {
-    background-color: #FFE040;
-  }
-
-  &--treatment::before {
-    content: "";
-    min-width: 87px;
-    min-height: 87px;
-    background-image: url("../img/treatment.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top center;
-  }
-
-  &--prosthetics::before {
-    content: "";
-    min-width: 87px;
-    min-height: 87px;
-    background-image: url("../img/prostethics.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top center;
-  }
+.location__title::before {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: #FFD600;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
-.appointment__title {
+
+.location__text {
+  max-width: 879px;
+  margin: 0;
+  margin-bottom: 27px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: #4D4D4D;
+}
+
+.location__map-inner {
+  position: relative;
+  max-width: 1920px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.location__map {
+
+  display: block;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.location__map-img {
+  width: 1920px;
+  height: 760px;
+  object-fit: cover;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: calc(50%) center;
+}
+
+.location__title {
   margin-top: 19px;
   margin-bottom: 4px;
   text-align: center;
@@ -61,19 +82,11 @@
   line-height: 21px;
   color: #272727;
 }
-.appointment__text {
-  margin: 0;
-  text-align: center;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 25px;
-  color: #272727;
-}
-.appointment__form {
+
+.location__form {
   position: absolute;
-  left: 625px;
+  left: 0;
+  top: 200px;
   padding: 34px 18px;
   background-color: #0055B8;
   display: flex;
@@ -81,7 +94,7 @@
   border-radius: 5px;
 }
 
-.appointment__form-title {
+.location__form-title {
   margin-top: 0;
   margin-bottom: 29px;
   font-family: "Roboto";
@@ -92,7 +105,7 @@
   color: #FFFFFF;
 }
 
-.appointment__input {
+.location__input {
   min-width: 473px;
   padding: 20px 14px;
   background: transparent;
@@ -107,11 +120,11 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-.appointment__input:focus {
+.location__input:focus {
   background-color: transparent;
 }
 
-.appointment__button {
+.location__button {
   max-width: 230px;
   padding: 17px 63px;
   background-color: #FFD600;
@@ -120,20 +133,20 @@
   margin-bottom: 22px;
 }
 
-.appointment__button:hover {
+.location__button:hover {
   opacity: 0.8;
 }
 
-.appointment__button:active {
+.location__button:active {
   opacity: 0.6;
 }
 
-.appointment__inner {
+.location__inner {
   display: flex;
   justify-content: space-between;
 }
 
-.appointment__form-text {
+.location__form-text {
   width: 260px;
   margin: 0;
   font-family: "Roboto";
@@ -144,12 +157,12 @@
   color: #FFFFFF;
 }
 
-.appointment__checkbox {
+.location__checkbox {
   // display: none;
   appearance: none;
 }
 
-.appointment__span {
+.location__span {
   position: absolute;
   width: 35px;
   height: 35px;
@@ -157,6 +170,12 @@
   background-repeat: no-repeat;
   right: 20px;
 }
+
+.location__label .location__checkbox:checked + .location__span,
+.location__label .location__checkbox:disabled + .location__span {
+  background-image: url("../img/checkbox.svg");
+}
+
 
 .appointment__checkbox + .appointment__span {
   background-image: url("../img/checkbox.svg");
@@ -175,51 +194,41 @@
 }
 
 @media only screen and (max-width: 1160px) {
-  .appointment__item {
-    max-width: 269px;
-    text-align: left;
-  }
-
-  .appointment__form {
+  .location__form {
     min-width: 485px;
-    left: 538px;
   }
 
-  .appointment__input {
+  .location__input {
     max-width: 424px;
   }
 }
 
-@media only screen and (max-width: 1060px) {
-  .appointment__list {
-    display: none;
-  }
-
-  .appointment__form {
-    width: 100%;
-    position: static;
-  }
-
-  .appointment__span {
-    right: 60px;
-  }
-}
-
 @media only screen and (max-width: 510px) {
-  .appointment__form {
+  .location__form {
+    position: static;
     min-width: 100%;
   }
 
-  .appointment__input {
+  .location__input {
     min-width: 327px;
   }
 
-  .appointment__button {
+  .location__button {
     min-width: 327px;
   }
 
 
-  .appointment__span {
+  .location__span {
     right: 25px;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .location__map-img {
+    display: none;
+  }
+
+  .location__map-sm {
+    display: block;
   }
 }

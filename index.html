@@ -158,8 +158,8 @@
           <button class="appointment__button" type="submit">Appointment</button>
           <div class="appointment__inner">
             <p class="appointment__form-text">I give my consent to the storage and processing of personal data</p>
-            <label class="appointmeint__label" for="">
-              <input  class="appointment__checkbox visually-hidden" name="checkbox" type="checkbox">
+            <label class="appointmeint__label" for="checkbox">
+              <input  class="appointment__checkbox visually-hidden" id="checkbox" name="checkbox" type="checkbox" disabled>
               <span aria-hidden="true" class="appointment__span"></span>
             </label>
 
@@ -302,16 +302,16 @@
             <img class="quality__bg" src="img/quality-sm-bg.jpg" aria-hidden="true" alt="" width="464" height="309" srcset="img/quality-sm-bg.jpg 1x, img/quality-sm-bg@2x.jpg 2x">
             <div class="quality__box">
               <h2 class="quality__title">We are confident in the quality of our services</h2>
-            <p class="quality__text">About 50 thousand patients opted for the Dental   Practice dental center. People come to us as a family, because trust and      comfort are important for the health of loved ones. And we provide this:
-              - You do not need to go anywhere else - the center provides the whole range of dental services - treatment and diagnosis, as well as prevention.
-              - We have reasonable prices. You pay for quality. And you will be offered different opportunities.- We also do not pursue cheapness. This is our reasonable choice - only good materials should be used in the treatment, and professionals should deal with it.- For regular customers discounts from 5 to 20%.</p>
+              <p class="quality__text">About 50 thousand patients opted for the Dental   Practice dental center. People come to us as a family, because trust and      comfort are important for the health of loved ones. And we provide this:
+                - You do not need to go anywhere else - the center provides the whole range of dental services - treatment and diagnosis, as well as prevention.
+                - We have reasonable prices. You pay for quality. And you will be offered different opportunities.- We also do not pursue cheapness. This is our reasonable choice - only good materials should be used in the treatment, and professionals should deal with it.- For regular customers discounts from 5 to 20%.</p>
 
-              <div class="quality__inner">
-                <img class="quality__signature" src="img/signature.png" alt="warranty signature" width="85" height="70">
+                <div class="quality__inner">
+                  <img class="quality__signature" src="img/signature.png" alt="warranty signature" width="85" height="70">
 
-                <button class="quality__button" type="button">Learn more</button>
+                  <button class="quality__button" type="button">Learn more</button>
+                </div>
               </div>
-            </div>
             </div>
           </section>
 
@@ -324,45 +324,83 @@
 
               <ul class="reviews__list">
                 <li class="reviews__item">
-                  <img class="reviews__img" src="img/vasilisa.jpg" alt="ivan" width="354" height="240"
-                  srcset="img/vasilisa.jpg 1x, img/vasilisa@2x.jpg 2x">
-                  <p class="reviews__name">Ivan Ivanov</p>
-                  <p class="reviews__profession">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis illo veniam tempora omnis tempore repellendus debitis iusto alias nihil, obcaecati doloremque hic qui assumenda, maiores quae sapiente vitae. Ratione.</p>
-                </li>
 
-                <li class="reviews__item reviews__item--vasilisa">
-                  <img class="reviews__img" src="img/petr.jpg" alt="petr" width="354" height="240"
-                  srcset="img/petr.jpg 1x, img/petr@2x.jpg 2x">
-                  <p class="reviews__name">Vasilisova Vasilisa</p>
-                  <p class="reviews__profession">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis illo veniam tempora omnis tempore repellendus debitis iusto alias nihil, obcaecati doloremque hic qui assumenda, maiores quae sapiente vitae. Ratione.</p>
-                </li>
+                  <!-- WEBP PISCTURE -->
 
-                <li class="reviews__item reviews__item--petr">
-                  <img class="reviews__img" src="img/petr.jpg" alt="ivan" width="354" height="240"
-                  srcset="img/petr.jpg 1x, img/petr@2x.jpg 2x">
-                  <p class="reviews__name">Petrov Petr</p>
-                  <p class="reviews__profession">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis illo veniam tempora omnis tempore repellendus debitis iusto alias nihil, obcaecati doloremque hic qui assumenda, maiores quae sapiente vitae. Ratione.</p>
-                </li>
-              </ul>
+                  <picture>
+                    <source type="image/webp" srcset="img/vasilisawebp.webp 1x, img/vasilisawebp@2x.webp 2x">
 
-              <a class="reviews__link" href="team.html">Give feedback</a>
-            </div>
-          </section>
+                      <img class="reviews__img" src="img/vasilisa.jpg" alt="ivan" width="354" height="240"
+                      srcset="img/vasilisa.jpg 1x, img/vasilisa@2x.jpg 2x">
+                    </picture>
+                    <p class="reviews__name">Ivan Ivanov</p>
+                    <p class="reviews__profession">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis illo veniam tempora omnis tempore repellendus debitis iusto alias nihil, obcaecati doloremque hic qui assumenda, maiores quae sapiente vitae. Ratione.</p>
+                  </li>
 
-          <!-- LOCATION -->
+                  <li class="reviews__item reviews__item--vasilisa">
+                    <img class="reviews__img" src="img/petr.jpg" alt="petr" width="354" height="240"
+                    srcset="img/petr.jpg 1x, img/petr@2x.jpg 2x">
+                    <p class="reviews__name">Vasilisova Vasilisa</p>
+                    <p class="reviews__profession">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis illo veniam tempora omnis tempore repellendus debitis iusto alias nihil, obcaecati doloremque hic qui assumenda, maiores quae sapiente vitae. Ratione.</p>
+                  </li>
 
-          <section class="location">
-            <div class="container">
-              <h2 class="location__title">Convenient location and working hours</h2>
-              <p class="location__text">Our clinic is located in the center of the Sverdlovsk district, at the address: Raboche-Krestyanskaya Street 6. From the bus stop “Family” hypermarket to our dental clinic - 5 minutes on foot.</p>
-            </div>
-          </section>
-        </main>
+                  <li class="reviews__item reviews__item--petr">
+                    <img class="reviews__img" src="img/petr.jpg" alt="ivan" width="354" height="240"
+                    srcset="img/petr.jpg 1x, img/petr@2x.jpg 2x">
+                    <p class="reviews__name">Petrov Petr</p>
+                    <p class="reviews__profession">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt perferendis illo veniam tempora omnis tempore repellendus debitis iusto alias nihil, obcaecati doloremque hic qui assumenda, maiores quae sapiente vitae. Ratione.</p>
+                  </li>
+                </ul>
 
-        <script>
-          var elHeader = document.querySelector(".header")
+                <a class="reviews__link" href="team.html">Give feedback</a>
+              </div>
+            </section>
 
-          elHeader.classList.remove("header--nojs");
-        </script>
-      </body>
-      </html>
+            <!-- LOCATION -->
+
+            <section class="location">
+              <div class="container">
+                <h2 class="location__title">Convenient location and working hours</h2>
+                <p class="location__text">Our clinic is located in the center of the Sverdlovsk district, at the address: Raboche-Krestyanskaya Street 6. From the bus stop “Family” hypermarket to our dental clinic - 5 minutes on foot.</p>
+              </div>
+              <div class="location__map-inner">
+                <a class="location__map" href="https://g.page/najottalim?share" target="_blank">
+                  <img class="location__map-img" src="img/map.png" alt="map" width="1920" height="760" srcset="img/map.png 1x, img/map@2x.png 2x">
+
+                  <img class="location__map-sm" src="img/map-sm.png" alt="map" width="389" height="206" srcset="img/map-sm.png 1x, img/map-sm@2x.png 2x">
+                </a>
+
+                <form class="location__form" action="https://echo.htmlacademy.ru" method="POST">
+                  <h3 class="location__form-title">Appointment</h3>
+                  <input class="location__input" type="text" name="name" placeholder="Name">
+                  <input class="location__input" type="tel" name="phone" placeholder="Phone">
+                  <button class="location__button" type="submit">Appointment</button>
+                  <div class="location__inner">
+                    <p class="location__form-text">I give my consent to the storage and processing of personal data</p>
+                    <label class="location__label" for="checkbox">
+                      <input  class="location__checkbox visually-hidden" id="checkbox" name="checkbox" type="checkbox" disabled>
+                      <span aria-hidden="true" class="location__span"></span>
+                    </label>
+                  </div>
+
+                </div>
+              </form>
+
+            </section>
+          </main>
+
+          <script>
+            var elHeader = document.querySelector(".header")
+
+            elHeader.classList.remove("header--nojs");
+
+            var elMenuToggler = document.querySelector('.sitenav__toggler')
+            var elMenu = document.querySelector('.header__sitenav')
+
+            elMenuToggler.addEventListener('click', function ()
+            {
+              elMenu.classList.toggle('sitenav--open')
+            });
+          </script>
+        </body>
+        </html>

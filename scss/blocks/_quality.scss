@@ -130,4 +130,9 @@
     padding: 24px 42px;
     max-width: 175px;
   }
+
+  .quality__title::before {
+    margin-right: auto;
+    margin-left: 0;
+  }
 }
