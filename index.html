@@ -158,8 +158,8 @@
           <button class="appointment__button" type="submit">Appointment</button>
           <div class="appointment__inner">
             <p class="appointment__form-text">I give my consent to the storage and processing of personal data</p>
-            <label class="appointmeint__label" for="checkbox">
-              <input  class="appointment__checkbox visually-hidden" id="checkbox" name="checkbox" type="checkbox" disabled>
+            <label class="appointmeint__label" for="agree">
+              <input  class="appointment__checkbox visually-hidden" id="agree" name="checkbox" type="checkbox">
               <span aria-hidden="true" class="appointment__span"></span>
             </label>
 
@@ -378,29 +378,28 @@
                   <div class="location__inner">
                     <p class="location__form-text">I give my consent to the storage and processing of personal data</p>
                     <label class="location__label" for="checkbox">
-                      <input  class="location__checkbox visually-hidden" id="checkbox" name="checkbox" type="checkbox" disabled>
+                      <input  class="location__checkbox visually-hidden" id="checkbox" name="checkbox" type="checkbox">
                       <span aria-hidden="true" class="location__span"></span>
                     </label>
-                  </div>
-
+                    </div>
+                  </form>
                 </div>
-              </form>
 
-            </section>
-          </main>
+          </section>
+        </main>
 
-          <script>
-            var elHeader = document.querySelector(".header")
+        <script>
+          var elHeader = document.querySelector(".header")
 
-            elHeader.classList.remove("header--nojs");
+          elHeader.classList.remove("header--nojs");
 
-            var elMenuToggler = document.querySelector('.sitenav__toggler')
-            var elMenu = document.querySelector('.header__sitenav')
+          var elMenuToggler = document.querySelector('.sitenav__toggler')
+          var elMenu = document.querySelector('.header__sitenav')
 
-            elMenuToggler.addEventListener('click', function ()
-            {
-              elMenu.classList.toggle('sitenav--open')
-            });
-          </script>
-        </body>
-        </html>
+          elMenuToggler.addEventListener('click', function ()
+          {
+            elMenu.classList.toggle('sitenav--open')
+          });
+        </script>
+      </body>
+      </html>

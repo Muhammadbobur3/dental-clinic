@@ -206,6 +206,7 @@
 @media only screen and (max-width: 510px) {
   .location__form {
     position: static;
+    order: -1;
     min-width: 100%;
   }
 

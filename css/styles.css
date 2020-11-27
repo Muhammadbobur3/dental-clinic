@@ -1952,6 +1952,9 @@ img {
 @media only screen and (max-width: 510px) {
   .location__form {
     position: static;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
     min-width: 100%;
   }
   .location__input {
